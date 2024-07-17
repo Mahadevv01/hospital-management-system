@@ -15,7 +15,7 @@ const appointmentSchema = new mongoose.Schema({
   },
   email: {
     type: String,
-    required: [true, "Email Is Required!"],
+    required: [true, "Email Is compulsory Required!"],
     validate: [validator.isEmail, "Provide A Valid Email!"],
   },
   phone: {

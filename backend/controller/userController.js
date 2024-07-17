@@ -22,7 +22,7 @@ export const patientRegister = catchAsyncErrors(async (req, res, next) => {
 
   const isRegistered = await User.findOne({ email });
   if (isRegistered) {
-    return next(new ErrorHandler("User already Registered!", 400));
+    return next(new ErrorHandler("You are  already Registered!", 400));
   }
 
   const user = await User.create({
@@ -105,7 +105,7 @@ export const addNewAdmin = catchAsyncErrors(async (req, res, next) => {
 
 export const addNewDoctor = catchAsyncErrors(async (req, res, next) => {
   if (!req.files || Object.keys(req.files).length === 0) {
-    return next(new ErrorHandler("Doctor Avatar Required!", 400));
+    return next(new ErrorHandler("Doctor Avatar needed!", 400));
   }
   const { docAvatar } = req.files;
   const allowedFormats = ["image/png", "image/jpeg", "image/webp"];
