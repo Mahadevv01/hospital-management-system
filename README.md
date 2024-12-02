@@ -25,14 +25,7 @@ This Hospital Management System is a full-stack application built using the MERN
 - **Authentication:** JWT (JSON Web Token) for secure user authentication
 - **Styling:** CSS/Bootstrap for responsive design
 
-## Installation
 
-### Prerequisites
-
-Make sure you have the following installed:
-
-- Node.js
-- MongoDB
 
 ### Setup Instructions
 
